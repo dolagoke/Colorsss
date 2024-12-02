@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Flex</title>
+  <style>
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 200px;
+      margin-top: 50px;
+    }
+
+    .flex-item {
+      flex: 1;
+      height: 100px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item" id="item1">My name is Dapo</div>
+    <div class="flex-item" id="item2">I like Soccer</div>
+    <div class="flex-item" id="item3">I love Music & Fashion as well</div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const flexContainer = document.querySelector('.flex-container');
+      flexContainer.style.backgroundColor = '#f2f2f2';
+      flexContainer.style.border = '2px solid #333';
+      flexContainer.style.padding = '10px';
+
+      const item1 = document.querySelector('#item1');
+      const item2 = document.querySelector('#item2');
+      const item3 = document.querySelector('#item3');
+
+      item1.style.backgroundColor = 'yellow';
+      item1.style.border = '1px dashed #cc66ff';
+      item1.style.color = '#333';
+
+      item2.style.backgroundColor = 'brown';
+      item2.style.border = '2px solid #ffcc00';
+      item2.style.color = '#fff';
+
+      item3.style.backgroundColor = 'green';
+      item3.style.border = '3px dotted #339966';
+      item3.style.color = '#fff';
+    });
+  </script>
+</body>
+</html>
